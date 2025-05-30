@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. W's Calculus Corner</title>
+    <!-- MathJax for LaTeX rendering -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- Add MathLive and Compute Engine -->
+    <script src="https://unpkg.com/mathlive"></script>
+    <script src="https://unpkg.com/@cortex-js/compute-engine"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="#" class="reset-link">Dr. W's Calculus Corner</a></h1>
+    </header>
+    <div class="main-container">
+        <!-- Class Selection -->
+        <div class="selection-section" id="class-selection">
+            <div class="section-header">
+                <h2>Choose Your Class:</h2>
+                <div id="class-buttons"></div>
+            </div>
+        </div>
+
+        <!-- Category Selection -->
+        <div class="selection-section hidden" id="category-selection">
+            <div class="section-header">
+                <h2>Choose Your Category:</h2>
+                <div id="category-buttons"></div>
+            </div>
+        </div>
+
+        <!-- Problem Type Selection -->
+        <div class="selection-section hidden" id="problem-type-selection">
+            <div class="section-header">
+                <h2>Choose Problem Type:</h2>
+                <div id="problem-type-buttons"></div>
+            </div>
+        </div>
+
+        <!-- Problem Content -->
+        <div class="problem-content hidden" id="problem-content">
+            <div class="title-row">
+                <h2 id="problem-title"></h2>
+                <div id="difficulty-buttons"></div>
+            </div>
+            <ul class="problem-list">
+                <li class="problem-item" data-answer="">
+                    <h4 id="problem-name"></h4>
+                    <p id="problem-instructions"></p>
+                    <div id="problem-statement"></div>
+                    <div class="answer-box">
+                        <math-field></math-field>
+                        <button class="submit-answer">Submit</button>
+                        <span class="feedback"></span>
+                    </div>
+                    <button class="show-solution">Show Solution</button>
+                    <div class="solution-box">
+                        <!-- Problem statement is now rendered as a solution-step div in the solution box -->
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Footer Box -->
+        <div class="footer-box">
+            <p><strong>Send corrections to <a href="mailto:exw321@miami.edu">exw321@miami.edu</a> (Include problem ID#)</strong></p>
+            <p><strong>Dr. W on YouTube: <a href="https://www.youtube.com/@Dr.W.Mathematics" target="_blank">https://www.youtube.com/@Dr.W.Mathematics</a></strong></p>
+            <p><strong>Join the Modern Math Academy: <a href="https://courses.modernmathacademy.com" target="_blank">courses.modernmathacademy.com</a></strong></p>
+        </div>
+    </div>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
