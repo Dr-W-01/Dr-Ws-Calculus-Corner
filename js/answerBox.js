@@ -1,3 +1,27 @@
+function gcd(a, b) {
+    if (!b) return Math.abs(a);
+    return gcd(b, a % b);
+}
+
+function parseFraction(str) {
+    const match = str.match(/^([-+]?\d+)\/(\d+)$/);
+    if (match) {
+        let num = parseInt(match[1], 10);
+        let den = parseInt(match[2], 10);
+        if (den === 0) return null;
+        const divisor = gcd(num, den);
+        return [num / divisor, den / divisor];
+    }
+    return null;
+}
+
+function fractionsEqual(a, b) {
+    const fa = parseFraction(a);
+    const fb = parseFraction(b);
+    if (!fa || !fb) return false;
+    return fa[0] === fb[0] && fa[1] === fb[1];
+}
+
 function normalizeAnswer(ans) {
     if (!ans) return '';
     let a = ans.trim().toLowerCase();
@@ -58,9 +82,9 @@ export function setupAnswerBox() {
                 feedback.style.color = '#008000';
                 return;
             }
-            // Special case: fractions
-            if (/^[-+]?\d+\/\d+$/.test(normCorrect) && /^[-+]?\d+\/\d+$/.test(normStudent)) {
-                if (normCorrect === normStudent) {
+            // Special case: fractions (robust check)
+            if (parseFraction(normCorrect) && parseFraction(normStudent)) {
+                if (fractionsEqual(normCorrect, normStudent)) {
                     feedback.textContent = 'Correct!';
                     feedback.style.color = '#008000';
                     return;
