@@ -156,8 +156,8 @@ export function initUI(problemData) {
     document.addEventListener('click', handleNextProblem);
     document.addEventListener('load-problem', (event) => {
         const { problem } = event.detail;
-        document.getElementById('problem-name').innerHTML = `${problem.name} <button class="next-problem">Next Problem</button>`;
-        document.getElementById('problem-instructions').innerHTML = `<strong>Instructions:</strong> ${problem.instructions}`;
+        document.getElementById('problem-name').innerHTML = `${problem.name} <button class=\"next-problem\">Next Problem</button>`;
+        document.getElementById('problem-instructions').innerHTML = `<div style=\"color:#c00;font-weight:bold;margin:6px 0;\">(Problem ID: ${problem.id})</div><strong>Instructions:</strong> ${problem.instructions}`;
         document.getElementById('problem-statement').innerHTML = problem.problem;
         if (window.MathJax && MathJax.typesetPromise) {
             MathJax.typesetPromise([document.getElementById('problem-statement')]);
