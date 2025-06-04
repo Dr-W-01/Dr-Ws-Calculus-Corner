@@ -1,5 +1,6 @@
 let currentProblemIndex = 0;
 let problemDataRef = {};
+let currentProblems = [];
 
 function generateButtons(containerId, items, type, target) {
     const container = document.getElementById(containerId);
@@ -110,34 +111,56 @@ function handleSelection(event) {
     }
 }
 
-function handleDifficulty(event) {
+async function handleDifficulty(event) {
     if (event.target.classList.contains('difficulty-button')) {
         const difficulty = event.target.getAttribute('data-difficulty');
         const siblings = event.target.parentElement.querySelectorAll('.difficulty-button');
         siblings.forEach(sib => sib.classList.remove('selected'));
         event.target.classList.add('selected');
+        
         const problemType = document.querySelector('.selection-button.selected[data-type="problem-type"]').getAttribute('data-value');
         const category = document.querySelector('.selection-button.selected[data-type="category"]').getAttribute('data-value');
         const className = document.querySelector('.selection-button.selected[data-type="class"]').getAttribute('data-value');
-        const problems = problemDataRef[className]?.[category]?.[problemType]?.[difficulty] || [];
-        if (problems.length > 0) {
-            currentProblemIndex = 0;
-            const event = new CustomEvent('load-problem', { detail: { problem: problems[0], index: 0 } });
-            document.dispatchEvent(event);
+        
+        // Show loading state
+        const problemContent = document.getElementById('problem-content');
+        problemContent.classList.add('loading');
+        
+        try {
+            // Load the problem set
+            const { loadProblemSet } = await import('./problemLoader.js');
+            currentProblems = await loadProblemSet(className, category, problemType, difficulty);
+            
+            if (currentProblems.length > 0) {
+                currentProblemIndex = 0;
+                const event = new CustomEvent('load-problem', { 
+                    detail: { 
+                        problem: currentProblems[0], 
+                        index: 0 
+                    } 
+                });
+                document.dispatchEvent(event);
+            }
+        } catch (error) {
+            console.error('Error loading problems:', error);
+            // Show error state
+            document.getElementById('problem-statement').innerHTML = 'Error loading problems. Please try again.';
+        } finally {
+            problemContent.classList.remove('loading');
         }
     }
 }
 
 function handleNextProblem(event) {
     if (event.target.classList.contains('next-problem')) {
-        const problemType = document.querySelector('.selection-button.selected[data-type="problem-type"]').getAttribute('data-value');
-        const category = document.querySelector('.selection-button.selected[data-type="category"]').getAttribute('data-value');
-        const className = document.querySelector('.selection-button.selected[data-type="class"]').getAttribute('data-value');
-        const difficulty = document.querySelector('.difficulty-button.selected').getAttribute('data-difficulty');
-        const problems = problemDataRef[className]?.[category]?.[problemType]?.[difficulty] || [];
-        if (problems.length > 1) {
-            currentProblemIndex = (currentProblemIndex + 1) % problems.length;
-            const event = new CustomEvent('load-problem', { detail: { problem: problems[currentProblemIndex], index: currentProblemIndex } });
+        if (currentProblems.length > 1) {
+            currentProblemIndex = (currentProblemIndex + 1) % currentProblems.length;
+            const event = new CustomEvent('load-problem', { 
+                detail: { 
+                    problem: currentProblems[currentProblemIndex], 
+                    index: currentProblemIndex 
+                } 
+            });
             document.dispatchEvent(event);
         }
     }
