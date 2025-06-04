@@ -36,8 +36,9 @@ function normalizeAnswer(ans) {
     if (/^-?\\?infty$|^-?infinity$/.test(a) || /\\?text\{(-?)infty\}/.test(a) || /\\?math\{(-?)infty\}/.test(a)) {
         return a.startsWith('-') ? '-infty' : 'infty';
     }
-    // Normalize fractions: convert \frac{a}{b} to a/b
-    a = a.replace(/\\frac\{([\d\w\-+]+)\}\{([\d\w\-+]+)\}/g, '$1/$2');
+    // Normalize fractions: convert \frac{a}{b} or \fracab to a/b
+    a = a.replace(/\\frac\{?([\d\w\-+]+)\}?\{?([\d\w\-+]+)\}?/g, '$1/$2');
+    a = a.replace(/\\frac([\d\w\-+]+)([\d\w\-+]+)/g, '$1/$2');
     // Remove whitespace
     a = a.replace(/\s+/g, '');
     return a;

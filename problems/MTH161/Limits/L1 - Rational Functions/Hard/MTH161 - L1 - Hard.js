@@ -53,4 +53,9 @@ export default [
             "<div><strong>Final Answer:</strong> <div class=\"boxed-answer\">\\frac{3}{2}</div></div>"
         ]
     }
-]; 
+].map(problem => ({
+    ...problem,
+    solution: problem.solution.map(step =>
+        step.replace(/<div class=\\?"boxed-answer\\?">([^<]*)<\/div>/g, '<div class="boxed-answer">\\[ $1 \\]</div>')
+    )
+})); 

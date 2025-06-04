@@ -23,7 +23,7 @@ export default [
         instructions: "Calculate the limit using techniques taught in this class. L'Hôpital's Rule and a table of values are not allowed. A correct answer without correct work is worth zero points.",
         problem: "\\[ \\lim_{x \\to -2} \\frac{x^2 + 5x + 6}{x^2 + x - 2} \\]",
         answer_type: "text",
-        answer: "1/3",
+        answer: "-1/3",
         solution: [
             "<div><strong>Problem:</strong> Calculate the limit using techniques taught in this class. L'Hôpital's Rule and a table of values are not allowed. A correct answer without correct work is worth zero points. \\[ \\lim_{x \\to -2} \\frac{x^2 + 5x + 6}{x^2 + x - 2} \\]</div>",
             "<ol>",
@@ -53,4 +53,9 @@ export default [
             "<div><strong>Final Answer:</strong> <div class=\"boxed-answer\">\\frac{8}{5}</div></div>"
         ]
     }
-]; 
+].map(problem => ({
+    ...problem,
+    solution: problem.solution.map(step =>
+        step.replace(/<div class=\\?"boxed-answer\\?">([^<]*)<\/div>/g, '<div class="boxed-answer">\\[ $1 \\]</div>')
+    )
+})); 
