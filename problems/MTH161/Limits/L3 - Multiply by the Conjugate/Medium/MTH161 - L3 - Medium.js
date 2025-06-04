@@ -14,7 +14,7 @@ const mediumProblems = [
             "<li>Cancel the common factor \\( x - 4 \\) (for \\( x \\neq 4 \\)): \\[ \\frac{x - 4}{(x - 4)(\\sqrt{x + 5} + 3)} = \\frac{1}{\\sqrt{x + 5} + 3} \\quad (x \\neq 4) \\]. <br> Simplify the limit: \\[ \\lim_{x \\to 4} \\frac{1}{\\sqrt{x + 5} + 3} \\].</li>",
             "<li>Evaluate the simplified expression: \\[ \\lim_{x \\to 4} \\frac{1}{\\sqrt{x + 5} + 3} = \\frac{1}{\\sqrt{4 + 5} + 3} = \\frac{1}{\\sqrt{9} + 3} = \\frac{1}{3 + 3} = \\frac{1}{6} \\]. <br> Substitute \\( x = 4 \\) to find the limit.</li>",
             "</ol>",
-            "<div><strong>Final Answer:</strong> <div class=\"boxed-answer\">\\frac{1}{6}</div></div>"
+            "<div><strong>Final Answer:</strong> <div class=\"boxed-answer\">\\[ \\frac{1}{6} \\]</div></div>"
         ]
     },
     {
@@ -32,7 +32,7 @@ const mediumProblems = [
             "<li>Cancel the common factor \\( x - 3 \\) (for \\( x \\neq 3 \\)): \\[ \\frac{x - 3}{(x - 3)(\\sqrt{x + 6} + 3)} = \\frac{1}{\\sqrt{x + 6} + 3} \\quad (x \\neq 3) \\]. <br> Simplify the limit: \\[ \\lim_{x \\to 3} \\frac{1}{\\sqrt{x + 6} + 3} \\].</li>",
             "<li>Evaluate the simplified expression: \\[ \\lim_{x \\to 3} \\frac{1}{\\sqrt{x + 6} + 3} = \\frac{1}{\\sqrt{3 + 6} + 3} = \\frac{1}{\\sqrt{9} + 3} = \\frac{1}{3 + 3} = \\frac{1}{6} \\]. <br> Substitute \\( x = 3 \\) to find the limit.</li>",
             "</ol>",
-            "<div><strong>Final Answer:</strong> <div class=\"boxed-answer\">\\frac{1}{6}</div></div>"
+            "<div><strong>Final Answer:</strong> <div class=\"boxed-answer\">\\[ \\frac{1}{6} \\]</div></div>"
         ]
     },
     {
@@ -50,7 +50,7 @@ const mediumProblems = [
             "<li>Cancel the common factor \\( x - 7 \\) (for \\( x \\neq 7 \\)): \\[ \\frac{x - 7}{(x - 7)(\\sqrt{x + 2} + 3)} = \\frac{1}{\\sqrt{x + 2} + 3} \\quad (x \\neq 7) \\]. <br> Simplify the limit: \\[ \\lim_{x \\to 7} \\frac{1}{\\sqrt{x + 2} + 3} \\].</li>",
             "<li>Evaluate the simplified expression: \\[ \\lim_{x \\to 7} \\frac{1}{\\sqrt{x + 2} + 3} = \\frac{1}{\\sqrt{7 + 2} + 3} = \\frac{1}{\\sqrt{9} + 3} = \\frac{1}{3 + 3} = \\frac{1}{6} \\]. <br> Substitute \\( x = 7 \\) to find the limit.</li>",
             "</ol>",
-            "<div><strong>Final Answer:</strong> <div class=\"boxed-answer\">\\frac{1}{6}</div></div>"
+            "<div><strong>Final Answer:</strong> <div class=\"boxed-answer\">\\[ \\frac{1}{6} \\]</div></div>"
         ]
     }
 ];

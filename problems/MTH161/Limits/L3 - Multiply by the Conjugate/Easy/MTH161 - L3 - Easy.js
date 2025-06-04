@@ -32,7 +32,7 @@ const easyProblems = [
             "<li>Cancel the common factor \\( x - 4 \\) (for \\( x \\neq 4 \\)): \\[ \\frac{x - 4}{(x - 4)(\\sqrt{x} + 2)} = \\frac{1}{\\sqrt{x} + 2} \\quad (x \\neq 4) \\]. <br> Simplify the limit: \\[ \\lim_{x \\to 4} \\frac{1}{\\sqrt{x} + 2} \\].</li>",
             "<li>Evaluate the simplified expression: \\[ \\lim_{x \\to 4} \\frac{1}{\\sqrt{x} + 2} = \\frac{1}{\\sqrt{4} + 2} = \\frac{1}{2 + 2} = \\frac{1}{4} \\]. <br> Substitute \\( x = 4 \\) to find the limit.</li>",
             "</ol>",
-            "<div><strong>Final Answer:</strong> <div class=\"boxed-answer\">\\frac{1}{4}</div></div>"
+            "<div><strong>Final Answer:</strong> <div class=\"boxed-answer\">\\[ \\frac{1}{4} \\]</div></div>"
         ]
     },
     {
@@ -50,7 +50,7 @@ const easyProblems = [
             "<li>Cancel the common factor \\( x - 16 \\) (for \\( x \\neq 16 \\)): \\[ \\frac{x - 16}{(x - 16)(\\sqrt{x} + 4)} = \\frac{1}{\\sqrt{x} + 4} \\quad (x \\neq 16) \\]. <br> Simplify the limit: \\[ \\lim_{x \\to 16} \\frac{1}{\\sqrt{x} + 4} \\].</li>",
             "<li>Evaluate the simplified expression: \\[ \\lim_{x \\to 16} \\frac{1}{\\sqrt{x} + 4} = \\frac{1}{\\sqrt{16} + 4} = \\frac{1}{4 + 4} = \\frac{1}{8} \\]. <br> Substitute \\( x = 16 \\) to find the limit.</li>",
             "</ol>",
-            "<div><strong>Final Answer:</strong> <div class=\"boxed-answer\">\\frac{1}{8}</div></div>"
+            "<div><strong>Final Answer:</strong> <div class=\"boxed-answer\">\\[ \\frac{1}{8} \\]</div></div>"
         ]
     }
 ];

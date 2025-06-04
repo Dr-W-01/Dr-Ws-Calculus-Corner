@@ -14,7 +14,7 @@ const hardProblems = [
             "<li>Cancel the common factor \\( x \\) (for \\( x \\neq 0 \\)): \\[ \\frac{2x}{x (\\sqrt{1 + x} + \\sqrt{1 - x})} = \\frac{2}{\\sqrt{1 + x} + \\sqrt{1 - x}} \\quad (x \\neq 0) \\]. <br> Simplify the limit: \\[ \\lim_{x \\to 0} \\frac{2}{\\sqrt{1 + x} + \\sqrt{1 - x}} \\].</li>",
             "<li>Evaluate the simplified expression: \\[ \\lim_{x \\to 0} \\frac{2}{\\sqrt{1 + x} + \\sqrt{1 - x}} = \\frac{2}{\\sqrt{1 + 0} + \\sqrt{1 - 0}} = \\frac{2}{1 + 1} = \\frac{2}{2} = 1 \\]. <br> Substitute \\( x = 0 \\) to find the limit.</li>",
             "</ol>",
-            "<div><strong>Final Answer:</strong> <div class=\"boxed-answer\">1</div></div>"
+            "<div><strong>Final Answer:</strong> <div class=\"boxed-answer\">\\[ 1 \\]</div></div>"
         ]
     },
     {
@@ -32,7 +32,7 @@ const hardProblems = [
             "<li>Multiply numerator and denominator by the conjugate of the numerator, \\( (x + 1) + \\sqrt{x + 1} \\): \\[ \\lim_{x \\to 0} \\frac{(x + 1) - \\sqrt{x + 1}}{x} \\cdot \\frac{(x + 1) + \\sqrt{x + 1}}{(x + 1) + \\sqrt{x + 1}} = \\lim_{x \\to 0} \\frac{((x + 1) - \\sqrt{x + 1})((x + 1) + \\sqrt{x + 1})}{x ((x + 1) + \\sqrt{x + 1})} \\]. <br> Simplify the numerator: \\[ ((x + 1) - \\sqrt{x + 1})((x + 1) + \\sqrt{x + 1}) = (x + 1)^2 - (\sqrt{x + 1})^2 = (x^2 + 2x + 1) - (x + 1) = x^2 + x \\]. <br> Rewrite: \\[ \\lim_{x \\to 0} \\frac{x^2 + x}{x ((x + 1) + \\sqrt{x + 1})} \\].</li>",
             "<li>Factor and cancel: \\[ \\frac{x^2 + x}{x ((x + 1) + \\sqrt{x + 1})} = \\frac{x(x + 1)}{x ((x + 1) + \\sqrt{x + 1})} = \\frac{x + 1}{(x + 1) + \\sqrt{x + 1}} \\quad (x \\neq 0) \\]. <br> Simplify the limit: \\[ \\lim_{x \\to 0} \\frac{x + 1}{(x + 1) + \\sqrt{x + 1}} \\]. <br> Evaluate: \\[ \\lim_{x \\to 0} \\frac{0 + 1}{(0 + 1) + \\sqrt{0 + 1}} = \\frac{1}{1 + \\sqrt{1}} = \\frac{1}{2} \\]. <br> Substitute \\( x = 0 \\) to find the limit.</li>",
             "</ol>",
-            "<div><strong>Final Answer:</strong> <div class=\"boxed-answer\">\\frac{1}{2}</div></div>"
+            "<div><strong>Final Answer:</strong> <div class=\"boxed-answer\">\\[ \\frac{1}{2} \\]</div></div>"
         ]
     },
     {
@@ -50,7 +50,7 @@ const hardProblems = [
             "<li>Factor and cancel: \\[ \\frac{x^2 + x}{x (\\sqrt{x^2 + 3x + 1} + \\sqrt{2x + 1})} = \\frac{x(x + 1)}{x (\\sqrt{x^2 + 3x + 1} + \\sqrt{2x + 1})} = \\frac{x + 1}{\\sqrt{x^2 + 3x + 1} + \\sqrt{2x + 1}} \\quad (x \\neq 0) \\]. <br> Simplify the limit: \\[ \\lim_{x \\to 0} \\frac{x + 1}{\\sqrt{x^2 + 3x + 1} + \\sqrt{2x + 1}} \\].</li>",
             "<li>Evaluate the simplified expression: \\[ \\lim_{x \\to 0} \\frac{x + 1}{\\sqrt{x^2 + 3x + 1} + \\sqrt{2x + 1}} = \\frac{0 + 1}{\\sqrt{0^2 + 3 \\cdot 0 + 1} + \\sqrt{2 \\cdot 0 + 1}} = \\frac{1}{\\sqrt{1} + \\sqrt{1}} = \\frac{1}{1 + 1} = \\frac{1}{2} \\]. <br> Substitute \\( x = 0 \\) to find the limit.</li>",
             "</ol>",
-            "<div><strong>Final Answer:</strong> <div class=\"boxed-answer\">\\frac{1}{2}</div></div>"
+            "<div><strong>Final Answer:</strong> <div class=\"boxed-answer\">\\[ \\frac{1}{2} \\]</div></div>"
         ]
     }
 ];
