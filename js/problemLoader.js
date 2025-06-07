@@ -11,6 +11,31 @@ const problemStructure = {
                 'easy': '../problems/MTH161/Limits/L3 - Multiply by the Conjugate/Easy/MTH161 - L3 - Easy.js',
                 'medium': '../problems/MTH161/Limits/L3 - Multiply by the Conjugate/Medium/MTH161 - L3 - Medium.js',
                 'hard': '../problems/MTH161/Limits/L3 - Multiply by the Conjugate/Hard/MTH161 - L3 - Hard.js'
+            },
+            'One-Sided Limits': {
+                'easy': '../problems/MTH161/Limits/L4 - One-Sided Limits/Easy/MTH161 - L4 - Easy.js',
+                'medium': '../problems/MTH161/Limits/L4 - One-Sided Limits/Medium/MTH161 - L4 - Medium.js',
+                'hard': '../problems/MTH161/Limits/L4 - One-Sided Limits/Hard/MTH161 - L4 - Hard.js'
+            },
+            'Infinite Discontinuities': {
+                'easy': '../problems/MTH161/Limits/L5 - Infinite Discontinuities/Easy/MTH161 - L5 - Easy.js',
+                'medium': '../problems/MTH161/Limits/L5 - Infinite Discontinuities/Medium/MTH161 - L5 - Medium.js',
+                'hard': '../problems/MTH161/Limits/L5 - Infinite Discontinuities/Hard/MTH161 - L5 - Hard.js'
+            },
+            'Removable Discontinuities': {
+                'easy': '../problems/MTH161/Limits/L6 - Removable Discontinuities/Easy/MTH161 - L6 - Easy.js',
+                'medium': '../problems/MTH161/Limits/L6 - Removable Discontinuities/Medium/MTH161 - L6 - Medium.js',
+                'hard': '../problems/MTH161/Limits/L6 - Removable Discontinuities/Hard/MTH161 - L6 - Hard.js'
+            },
+            'Limits at Infinity': {
+                'easy': '../problems/MTH161/Limits/L7 - Limits at Infinity/Easy/MTH161 - L7 - Easy.js',
+                'medium': '../problems/MTH161/Limits/L7 - Limits at Infinity/Medium/MTH161 - L7 - Medium.js',
+                'hard': '../problems/MTH161/Limits/L7 - Limits at Infinity/Hard/MTH161 - L7 - Hard.js'
+            },
+            'Limits of Trigonometric Functions': {
+                'easy': '../problems/MTH161/Limits/L8 - Limits of Trigonometric Functions/Easy/MTH161 - L8 - Easy.js',
+                'medium': '../problems/MTH161/Limits/L8 - Limits of Trigonometric Functions/Medium/MTH161 - L8 - Medium.js',
+                'hard': '../problems/MTH161/Limits/L8 - Limits of Trigonometric Functions/Hard/MTH161 - L8 - Hard.js'
             }
         }
     }
