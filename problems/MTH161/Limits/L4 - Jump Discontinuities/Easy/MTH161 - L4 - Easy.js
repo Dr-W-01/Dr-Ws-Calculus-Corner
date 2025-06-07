@@ -8,7 +8,6 @@ const easyProblems = [
         answer: "DNE",
         solution: [
             "<div><strong>Problem:</strong> Calculate the limit using techniques taught in this class. L'Hôpital's Rule and a table of values are not allowed. A correct answer without correct work is worth zero points. \\[ \\lim_{x \\to 3} \\frac{|x - 3|}{x - 3} \\]</div>",
-            "<div><strong>Problem:</strong> Calculate the limit using techniques taught in this class. L'Hôpital's Rule and a table of values are not allowed. A correct answer without correct work is worth zero points. \\[ \\lim_{x \\to 3} \\frac{|x - 3|}{x - 3} \\]</div>",
             "<ol>",
             "<li>Analyze the absolute value to define the piecewise function: \\[ |x - 3| = \\begin{cases} x - 3 & \\text{if } x \\geq 3 \\\\ -(x - 3) & \\text{if } x < 3 \\end{cases} \\]. <br> The function becomes: \\[ \\frac{|x - 3|}{x - 3} = \\begin{cases} \\frac{x - 3}{x - 3} = 1 & \\text{if } x > 3 \\\\ \\frac{-(x - 3)}{x - 3} = -1 & \\text{if } x < 3 \\end{cases} \\]. <br> The function is undefined at \\( x = 3 \\), so compute one-sided limits.</li>",
             "<li>Compute the left-hand limit: For \\( x < 3 \\), \\[ \\frac{|x - 3|}{x - 3} = -1 \\]. \\[ \\lim_{x \\to 3^-} \\frac{|x - 3|}{x - 3} = \\lim_{x \\to 3^-} (-1) = -1 \\]. <br> The left-hand limit is -1.</li>",
