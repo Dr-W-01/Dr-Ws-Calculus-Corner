@@ -12,10 +12,10 @@ const problemStructure = {
                 'medium': '../problems/MTH161/Limits/L3 - Multiply by the Conjugate/Medium/MTH161 - L3 - Medium.js',
                 'hard': '../problems/MTH161/Limits/L3 - Multiply by the Conjugate/Hard/MTH161 - L3 - Hard.js'
             },
-            'One-Sided Limits': {
-                'easy': '../problems/MTH161/Limits/L4 - One-Sided Limits/Easy/MTH161 - L4 - Easy.js',
-                'medium': '../problems/MTH161/Limits/L4 - One-Sided Limits/Medium/MTH161 - L4 - Medium.js',
-                'hard': '../problems/MTH161/Limits/L4 - One-Sided Limits/Hard/MTH161 - L4 - Hard.js'
+            'Jump Discontinuities': {
+                'easy': '../problems/MTH161/Limits/L4 - Jump Discontinuities/Easy/MTH161 - L4 - Easy.js',
+                'medium': '../problems/MTH161/Limits/L4 - Jump Discontinuities/Medium/MTH161 - L4 - Medium.js',
+                'hard': '../problems/MTH161/Limits/L4 - Jump Discontinuities/Hard/MTH161 - L4 - Hard.js'
             },
             'Infinite Discontinuities': {
                 'easy': '../problems/MTH161/Limits/L5 - Infinite Discontinuities/Easy/MTH161 - L5 - Easy.js',
