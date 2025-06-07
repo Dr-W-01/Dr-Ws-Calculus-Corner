@@ -16,36 +16,6 @@ const problemStructure = {
                 'easy': '../problems/MTH161/Limits/L4 - Jump Discontinuities/Easy/MTH161 - L4 - Easy.js',
                 'medium': '../problems/MTH161/Limits/L4 - Jump Discontinuities/Medium/MTH161 - L4 - Medium.js',
                 'hard': '../problems/MTH161/Limits/L4 - Jump Discontinuities/Hard/MTH161 - L4 - Hard.js'
-            },
-            'Infinite Discontinuities': {
-                'easy': '../problems/MTH161/Limits/L5 - Infinite Discontinuities/Easy/MTH161 - L5 - Easy.js',
-                'medium': '../problems/MTH161/Limits/L5 - Infinite Discontinuities/Medium/MTH161 - L5 - Medium.js',
-                'hard': '../problems/MTH161/Limits/L5 - Infinite Discontinuities/Hard/MTH161 - L5 - Hard.js'
-            },
-            'Removable Discontinuities': {
-                'easy': '../problems/MTH161/Limits/L6 - Removable Discontinuities/Easy/MTH161 - L6 - Easy.js',
-                'medium': '../problems/MTH161/Limits/L6 - Removable Discontinuities/Medium/MTH161 - L6 - Medium.js',
-                'hard': '../problems/MTH161/Limits/L6 - Removable Discontinuities/Hard/MTH161 - L6 - Hard.js'
-            },
-            'Horizontal Asymptotes': {
-                'easy': '../problems/MTH161/Limits/L7 - Horizontal Asymptotes/Easy/MTH161 - L7 - Easy.js',
-                'medium': '../problems/MTH161/Limits/L7 - Horizontal Asymptotes/Medium/MTH161 - L7 - Medium.js',
-                'hard': '../problems/MTH161/Limits/L7 - Horizontal Asymptotes/Hard/MTH161 - L7 - Hard.js'
-            },
-            'Limits of Trigonometric Functions': {
-                'easy': '../problems/MTH161/Limits/L8 - Limits of Trigonometric Functions/Easy/MTH161 - L8 - Easy.js',
-                'medium': '../problems/MTH161/Limits/L8 - Limits of Trigonometric Functions/Medium/MTH161 - L8 - Medium.js',
-                'hard': '../problems/MTH161/Limits/L8 - Limits of Trigonometric Functions/Hard/MTH161 - L8 - Hard.js'
-            },
-            'Removable Absolute Value': {
-                'easy': '../problems/MTH161/Limits/L9 - Removable Absolute Value/Easy/MTH161 - L9 - Easy.js',
-                'medium': '../problems/MTH161/Limits/L9 - Removable Absolute Value/Medium/MTH161 - L9 - Medium.js',
-                'hard': '../problems/MTH161/Limits/L9 - Removable Absolute Value/Hard/MTH161 - L9 - Hard.js'
-            },
-            'Vertical Asymptotes': {
-                'easy': '../problems/MTH161/Limits/L10 - Vertical Asymptotes/Easy/MTH161 - L10 - Easy.js',
-                'medium': '../problems/MTH161/Limits/L10 - Vertical Asymptotes/Medium/MTH161 - L10 - Medium.js',
-                'hard': '../problems/MTH161/Limits/L10 - Vertical Asymptotes/Hard/MTH161 - L10 - Hard.js'
             }
         }
     }
